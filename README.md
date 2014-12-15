@@ -1,4 +1,6 @@
-PHPmailer
+PHPMailer
 =========
 
-Voorbeelden PHPMailer
+Voorbeelden PHPMailer.
+
+Download: https://github.com/Synchro/PHPMailer
