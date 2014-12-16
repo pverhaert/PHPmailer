@@ -30,8 +30,7 @@ $FromName	= 'Mijn naam';
 if ($_POST['Submit'] <> "") {
 	$mail->SMTPDebug 	= 2;
 	$mail->Debugoutput	= 'html';
-	$mail->From     	= $from;
-	$mail->FromName		= $FromName;
+	$mail->SetFrom		($From, $FromName);
 	
 	$mail->AddAddress	($_POST["aanEmail"], $_POST["aanNaam"]);
   	$mail->Subject		= 'Bevestiging ...';
