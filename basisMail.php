@@ -25,7 +25,7 @@ if ($_POST['Submit'] <> "") {
   	require_once('ssi/mail.config.php');
 	$mail->SMTPDebug 	= 2;
 	$mail->Debugoutput	= 'html';
-	$mail->SetFrom		($_POST["vanEmail"], $_POST["vanEmail"]);
+	$mail->SetFrom		($_POST["vanEmail"], $_POST["vanNaam"]);
   	$mail->AddReplyTo	($_POST["vanEmail"], $_POST["vanNaam"]);
 	
 	$mail->Priority 	= $_POST["prioriteit"];
