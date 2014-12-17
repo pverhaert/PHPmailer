@@ -16,6 +16,9 @@ $nav = <<<NAV
             <li class="divider"></li>
             <li><a href="$basisURL/htmlMail_1.php"><i class="fa fa-fw fa-html5"></i> HTML e-mail (inline HTML)</a></li>
             <li><a href="$basisURL/htmlMail_2.php"><i class="fa fa-fw fa-html5"></i> HTML e-mail (HTML template)</a></li>
+            <li class="divider"></li>
+            <li><a href="$basisURL/dbMail_1.php"><i class="fa fa-fw fa-database"></i> Mailinglist (meerdere e-mails)</a></li>
+            <li><a href="$basisURL/dbMail_2.php"><i class="fa fa-fw fa-database"></i> Mailinglist (één e-mail)</a></li>
           </ul>
         </li>
       </ul>

@@ -20,13 +20,25 @@
   <p><span id="result_box" lang="nl">PHPMailer is een code bibliotheek om veilig en gemakkelijk e-mails te verzenden via php.</span></p>
   <h3><span lang="nl">Hoe ga je te werk?</span></h3>
   <ul>
+  <li>Controleer het basispad <strong>$basisURL</strong> in <strong>ssi/head.php</strong><br>
+<pre>
+$serverName = $_SERVER['SERVER_NAME'];
+switch($serverName){
+   // Testserver met subfolder PHP_email
+   case 'localhost':
+      $basisURL = '/PHP_email';
+      break;
+   // Productieserver zonder subfolder
+   default:
+      $basisURL = '';
+}
+</pre></li>
     <li>Download de PHPMailer bibliotheek via <a href="https://github.com/Synchro/PHPMailer">https://github.com/Synchro/PHPMailer</a></li>
     <li>Leg een verwijzing naar <strong>PHPMailerAutoload.php</strong><br>
 <code>
 require_once('ssi/mail.config.php');
 </code></li>
-    <li>Bepaal de
-voor u meest geschikte <a href="configTest.php">SMTP configuratie</a>.</li>
+    <li>Bepaal de voor u meest geschikte <a href="configTest.php">SMTP configuratie</a>.</li>
     <li>Bewaar deze configuratie in <strong>ssi/mail.config.php.<br>
     </strong>(Alle voorbeelden uit deze website maken gebruik van dezelfde configuratie.)</li>
     <li>Leg een verwijzing naar  <strong>ssi/mail.config.php.</strong>.</li>
@@ -43,7 +55,7 @@ require_once('PHPMailer/PHPMailerAutoload.php');
   </ul>
 </div>
 <div class="col-md-4">
-  <p><a href="https://github.com/Synchro/PHPMailer"><img src="assets/phpmailer.png" alt="PHPmailer logo"></a></p>
+  <p><a href="https://github.com/Synchro/PHPMailer"><img class="img-responsive img-rounded" src="assets/phpmailer.png" alt="PHPmailer logo"></a></p>
   <ul>
     <li><a href="https://github.com/Synchro/PHPMailer">https://github.com/Synchro/PHPMailer</a></li>
     <li><a href="http://phpmailer.github.io/PHPMailer/">http://phpmailer.github.io/PHPMailer/</a></li>
