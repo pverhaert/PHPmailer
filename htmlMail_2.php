@@ -35,7 +35,7 @@ if ($_POST['Submit'] <> "") {
 	$mail->AddAddress	($_POST["aanEmail"], $_POST["aanNaam"]);
   	$mail->Subject		= 'Bevestiging ...';
 	
-	$body = file_get_contents('mailTemplate.html'); 
+	$body = file_get_contents('mailTemplates/support.html'); 
     $body = str_replace('%naam%', $_POST["aanNaam"], $body); 
     $body = str_replace('%email%', $_POST["aanEmail"], $body); 
 	

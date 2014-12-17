@@ -38,6 +38,7 @@ require_once('PHPMailer/PHPMailerAutoload.php');
   <h3>Beperkingen Gmail</h3>
   
   <ul>
+    <li>Beveiliging via laatste <a href="https://support.google.com/mail/answer/45938?hl=nl">accountactiviteit</a></li>
     <li><a href="https://support.google.com/mail/answer/22370?hl=nl">E-mail verzenden vanaf een ander adres of een alias</a></li>
   </ul>
 </div>
