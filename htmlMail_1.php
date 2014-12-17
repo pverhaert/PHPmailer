@@ -99,8 +99,8 @@ if ($_POST['Submit'] <> "") {
     <pre class="text-info">
 <?php
 $code = <<<'CODE'
-// Formulier met tekst of HTML boodschap
-$mail->Body	= 'Tekst- of HTML versie van de boodschap';
+// Formulier met enkel een tekstboodschap
+$mail->Body	= 'Tekstboodschap';
 
 // Formulier met multipart tekst en HTML boodschap
 $mail->IsHTML();
@@ -108,12 +108,12 @@ $mail->AltBody	= 'Tekstversie van de boodschap';
 $mail->Body	= '&lt;p&gt;HTML versie van de boodschap&lt;/p&gt;
 &lt;p&gt;img src="/assets/phpmailer_mini.png"&gt;';
 
-// Tekstversie is gestripte HTML-versie
+// Tekstversie is nu een gestripte HTML-versie
 $mail->IsHTML();
 $mail->MsgHTML	('&lt;p&gt;HTML + tekstversie van de boodschap&lt;/p&gt;
 &lt;p&gt;img src="/assets/phpmailer_mini.png"&gt;');
 
-// Bijlage (naam is optioneel)
+// Bijlage toevoegen (naam is optioneel)
 $mail->addAttachment('/assets/phpmailer.png', 'logo PHPmailer');
 $mail->addAttachment('/assets/phpmailer_mini.png');
 CODE;

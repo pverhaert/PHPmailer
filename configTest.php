@@ -64,7 +64,7 @@ $(function() {
     });
 	
 	// Presets
-	$('#presetBtn button').click(function(e) {
+	$('.presetBtn button').click(function(e) {
 		var conf = $(this).data('conf');
         var c = conf.split(',');
 		$('#smtp_server').val(c[0]);
@@ -121,14 +121,16 @@ $(function() {
       </div>
       <div class="col-sm-6">
         <h3>Presets</h3>
-        <div class="btn-group btn-group-sm" id="presetBtn">
-          <button type="button" data-conf="localhost,25,0,false," class="btn btn-info">Localhost</button>
-          <button type="button" data-conf="localhost,587,1,true," class="btn btn-info">Localhost (secure)</button>
+        <div class="btn-group btn-group-xs presetBtn">
           <button type="button" data-conf="smtp.gmail.com,587,1,true,xxx@gmail.com" class="btn btn-primary">Gmail</button>
           <button type="button" data-conf="smtp.hotmail.com;smtp.live.com,587,1,true,xxx@hotmail.com" class="btn btn-primary">Hotmail</button>
           <button type="button" data-conf="relay.proximus.be;relay.skynet.be,587,1,true,xxx@proximus.be" class="btn btn-primary">Proximus</button>
           <button type="button" data-conf="smtp.telenet.be,587,1,true,xxx@telenet.be" class="btn btn-primary">Telenet</button>
           <button type="button" data-conf="smtps.kuleuven.be,587,1,true,u00xxxxx" class="btn btn-primary">KU Leuven</button>
+        </div>
+        <div class="btn-group btn-group-xs presetBtn">
+          <button type="button" data-conf="localhost,25,0,false," class="btn btn-info">Localhost</button>
+          <button type="button" data-conf="localhost,587,1,true," class="btn btn-info">Localhost (secure)</button>
         </div>
         <p></p>
         <div class="panel panel-success">

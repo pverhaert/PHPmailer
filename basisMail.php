@@ -124,9 +124,9 @@ $mail->AddBCC		('person6@example.com');
 // Prioriteit (optioneel) 1: hoog, 3: normaal, 5: laag
 $mail->Priority 	= 3;
 
-// Onderwerp en boodschap (tekst of HTML)
+// Onderwerp en boodschap (enkel tekst)
 $mail->Subject		= 'Onderwerp van de mail';
-$mail->Body    		= '&lt;p&gt;De boodschap&lt;br&gt;Lijn 2&lt;/p&gt;';
+$mail->Body    		= 'De boodschap';
 
 // Foutafhandeling
 try {
