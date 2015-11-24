@@ -127,6 +127,7 @@ $(function() {
           <button type="button" data-conf="relay.proximus.be;relay.skynet.be,587,1,true,xxx@proximus.be" class="btn btn-primary">Proximus</button>
           <button type="button" data-conf="smtp.telenet.be,587,1,true,xxx@telenet.be" class="btn btn-primary">Telenet</button>
           <button type="button" data-conf="smtps.kuleuven.be,587,1,true,u00xxxxx" class="btn btn-primary">KU Leuven</button>
+          <button type="button" data-conf="outlook.office365.com;smtp.office365.com,587,1,true,xxx@office365.com" class="btn btn-primary">Office365</button>
         </div>
         <div class="btn-group btn-group-xs presetBtn">
           <button type="button" data-conf="localhost,25,0,false," class="btn btn-info">Localhost</button>
