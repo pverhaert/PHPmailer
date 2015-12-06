@@ -48,11 +48,18 @@ require_once('PHPMailer/PHPMailerAutoload.php');
     </li>
   </ul>
   <h3>LET OP: zenden via Gmail kan, maar...</h3>
-  
   <ul>
     <li>Zet &quot;<a href="https://myaccount.google.com/security#connectedapps">Apps met lagere beveiliging toestaan</a>:&quot; AAN</li>
     <li>Beveiliging via laatste <a href="https://support.google.com/mail/answer/45938?hl=nl">accountactiviteit</a></li>
     <li><a href="https://support.google.com/mail/answer/22370?hl=nl">E-mail verzenden vanaf een ander adres of een alias</a></li>
+  </ul>
+  <h3>GMail: webserver reageert met &quot;Authentication failed&quot;</h3>
+  <ul>
+    <li>Je moet de webserver nog toegang verlenen op Gmail.</li>
+    <li>Ga naar: <a href="https://support.google.com/mail/answer/14257">https://support.google.com/mail/answer/14257</a></li>
+    <li>Volg de link <a href="https://accounts.google.com/DisplayUnlockCaptcha">https://accounts.google.com/DisplayUnlockCaptcha</a></li>
+    <li>Klik op Doorgaan.</li>
+    <li>Probeer nu opnieuw te zenden via de website.</li>
   </ul>
 </div>
 <div class="col-md-4">

@@ -24,7 +24,7 @@ if ($_POST['Submit'] <> "") {
 	$configCode .= "\$mail->SMTPDebug \t= 2;\n";
 	$configCode .= "\$mail->isSMTP();\n";
 	$configCode .= "\$mail->Host \t\t= '$smtp_server';\n";
-	$configCode .= "\$mail->Port \t\t= '$smtp_port';\n";
+	$configCode .= "\$mail->Port \t\t= $smtp_port;\n";
 	$configCode .= "\$mail->SMTPSecure \t= '$smtp_secure';\n";
 	if($smtp_authenticate != '') {
 		$configCode .= "\$mail->SMTPAuth \t= true;\n";	
