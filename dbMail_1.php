@@ -56,7 +56,7 @@ if ($_POST['Submit'] <> "") {
 		echo "</div>";
 	} catch (Exception $e) {
 		echo "<div class='alert alert-danger'><p>E-mail NIET verzonden:</p>";
-		echo $e->getMessage(); //Pretty error messages from PHPMailer
+		echo $e->getMessage(); //Boring error messages from anything else!
 		echo "</div>";
 	}
 	// Wis het mailadres, zoniet wordt de lijst gewoon aangevuld vanuit de loop! 

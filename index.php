@@ -47,12 +47,12 @@ require_once('PHPMailer/PHPMailerAutoload.php');
 </code>    <li>Vervolledig het mailscript aan de hand van bijgevoegde voorbeelden.
     </li>
   </ul>
-  <h3>Beperkingen Gmail</h3>
+  <h3>LET OP: zenden via Gmail kan, maar...</h3>
   
   <ul>
+    <li>Zet &quot;<a href="https://myaccount.google.com/security#connectedapps">Apps met lagere beveiliging toestaan</a>:&quot; AAN</li>
     <li>Beveiliging via laatste <a href="https://support.google.com/mail/answer/45938?hl=nl">accountactiviteit</a></li>
     <li><a href="https://support.google.com/mail/answer/22370?hl=nl">E-mail verzenden vanaf een ander adres of een alias</a></li>
-    <li>Apps met <a href="https://myaccount.google.com/security#connectedapps">lagere beveiliging toestaan</a></li>
   </ul>
 </div>
 <div class="col-md-4">

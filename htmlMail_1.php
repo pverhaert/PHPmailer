@@ -62,7 +62,7 @@ if ($_POST['Submit'] <> "") {
 		echo "</div>";
 	} catch (Exception $e) {
 		echo "<div class='alert alert-danger'><p>E-mail NIET verzonden:</p>";
-		echo $e->getMessage(); //Pretty error messages from PHPMailer
+		echo $e->getMessage(); //Boring error messages from anything else!
 		echo "</div>";
 	}
 }
@@ -108,7 +108,8 @@ $mail->AltBody	= 'Tekstversie van de boodschap';
 $mail->Body	= '&lt;p&gt;HTML versie van de boodschap&lt;/p&gt;
 &lt;p&gt;img src="/assets/phpmailer_mini.png"&gt;';
 
-// Tekstversie is nu een gestripte HTML-versie
+// Laat eventueel $mail->AltBody weg
+// Tekstversie is dan een gestripte HTML-versie
 $mail->IsHTML();
 $mail->MsgHTML	('&lt;p&gt;HTML + tekstversie van de boodschap&lt;/p&gt;
 &lt;p&gt;img src="/assets/phpmailer_mini.png"&gt;');
