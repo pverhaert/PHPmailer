@@ -108,8 +108,9 @@ $mail->AltBody	= 'Tekstversie van de boodschap';
 $mail->Body	= '&lt;p&gt;HTML versie van de boodschap&lt;/p&gt;
 &lt;p&gt;img src="/assets/phpmailer_mini.png"&gt;';
 
-// Laat eventueel $mail->AltBody weg
-// Tekstversie is dan een gestripte HTML-versie
+// Laat $mail->AltBody weg
+// Vervang $mail->Body door $mail->MsgHTML()
+// Tekstversie is nu default de gestripte HTML-versie
 $mail->IsHTML();
 $mail->MsgHTML	('&lt;p&gt;HTML + tekstversie van de boodschap&lt;/p&gt;
 &lt;p&gt;img src="/assets/phpmailer_mini.png"&gt;');
