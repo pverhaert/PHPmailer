@@ -18,7 +18,7 @@ switch($serverName){
 <link media="all" type="text/css" rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/ckeditor/4.5.5/ckeditor.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/ckeditor/4.5.5/adapters/jquery.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ckeditor/4.5.4/ckeditor.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ckeditor/4.5.4/adapters/jquery.js"></script>
 <link rel="stylesheet" type="text/css" href="<?php echo $basisURL ?>/custom.css">
 <script src="<?php echo $basisURL ?>/custom.js"></script>
